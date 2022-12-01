@@ -1,7 +1,7 @@
 {
   "name": "pwa-complete-guide",
   "version": "1.0.0",
-  "description": "A complete guide to PWAs. Building a simple Instagram clone.",
+  "description": "A complete guide to PWAs. Building a simple Form app.",
   "main": "index.js",
   "scripts": {
     "start": "http-server -c-1"
@@ -12,9 +12,10 @@
     "web",
     "app",
     "complete",
-    "tutorial"
+    "tutorial",
+    "Form"
   ],
-  "author": "Maximilian Schwarzmüller",
+  "author": "ksb96",
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.1"
