@@ -1,0 +1,19 @@
+{
+    "name": "Submit form as a PWA",
+    "short": "Submit Form",
+    "icons": [
+        {
+            "src": "/src/image/icons/app-icon-48x48.png",
+            "type": "image/png",
+            "size": "48x48"
+        }
+    ],
+    "start_url": "./index.html",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "all",
+    "background_color": "#fff",
+    "theme": "#000",
+    "dir": "ltr",
+    "lang": "en-US"
+}
