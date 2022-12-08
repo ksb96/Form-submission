@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="white" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,8 +12,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
-  <!-- <link rel="stylesheet" href="/src/css/app.css">
-  <link rel="stylesheet" href="/src/css/feed.css"> -->
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="stylesheet" href="/src/css/feed.css">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
   <link rel="manifest" href="./src/js/manifest.json">
   <link rel="apple-touch-icon" href="./src/images/icons/app-icon-48x48.png">
   <link rel="apple-touch-icon" href="./src/images/icons/app-icon-96x96.png">
@@ -72,7 +74,7 @@
           </div>
         </nav>
       </div>
-      <!-- <img src="/src/images/main-image.jpg" alt="Explore the City" class="main-image"> -->
+      <img src="./src/images/main-image-sm.jpg" alt="Demo Image" class="main-image">
       <main class="mdl-layout__content mat-typography">
         <form>
           <div class="card bg-light">
@@ -135,10 +137,8 @@
                 <textarea name="Comment" class="form-control" placeholder="Please write something!" type="text"
                   size="50"></textarea>
               </div>
-              <div class="floating-button">
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="share-image-button">
-                  <i class="material-icons">Submit</i>
-                </button>
+              <div>
+                <button class="submit" id="submit-button">Submit</button>
               </div>
               <div id="confirmation-toast" aria-live="assertive" aria-atomic="true" aria-relevant="text"
                 class="mdl-snackbar mdl-js-snackbar">
