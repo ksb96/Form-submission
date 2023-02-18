@@ -11,15 +11,45 @@
   display: none;
 }
 
-body {
+/* body {
   
+} */
+
+.submit {
+  background: rgb(23, 181, 213);
+  background: linear-gradient(90deg, rgba(23, 181, 213, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(31, 111, 20, 1) 0%);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  cursor: pointer;
 }
 
-.main-image {
+.reset {
+  background: rgb(23, 181, 213);
+  background: linear-gradient(90deg, rgba(23, 181, 213, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 0%);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+/* .main-image {
   max-width: 100%;
   margin: auto;
   display: block;
-}
+} */
 
 .floating-button {
   z-index: 1000;
@@ -33,3 +63,33 @@ body {
   display: block;
   margin: 10px auto;
 }
+
+.footer{
+  text-align: center !important;
+  font-style: normal;
+  font-size: smaller;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Effects - CC(choice code) */
+/* ripple effect */
+/* .submit::after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.submit:active::after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+} */

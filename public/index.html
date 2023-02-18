@@ -16,15 +16,19 @@
   <link rel="stylesheet" href="/src/css/feed.css">
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <link rel="manifest" href="./src/js/manifest.json">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-48x48.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-96x96.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-144x144.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-48x48.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-192x192.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-256x256.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-384x384.png">
-  <link rel="apple-touch-icon" href="./src/images/icons/app-icon-512x512.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="./src/js/images/icons/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+    integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -45,13 +49,13 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Form~App</span>
+          <span class="mdl-layout-title">Application Form</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="/">[Demo Link-1]</a>
-            <a class="mdl-navigation__link" href="/help">[Demo Link-2]</a>
+            <a class="mdl-navigation__link" href="./about.html" target="_blank">About</a>
+            <a class="mdl-navigation__link" href="./help.html" target="_blank">Help</a>
             <div class="drawer-option">
               <button
                 class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
@@ -62,25 +66,35 @@
         </div>
       </header>
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Items</span>
+        <span class="mdl-layout-title">Welcome</span>
+
+        <!-- <i class=" fa-duotone fa-hand-wave " style=" color: #1c7ed6; size: 20px;"></i>
+          <i class="fa-sharp fa-regular fa-hand-wave"></i> -->
+
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="/">[Demo Link-1]</a>
-          <a class="mdl-navigation__link" href="/help">[Demo Link-2]</a>
+          <a class="mdl-navigation__link" href="./about.html" target="_blank">About</a>
+          <a class="mdl-navigation__link" href="" target="_blank">Criteria</a>
+          <a class="mdl-navigation__link" href="" target="_blank">Image Gallery</a>
+          <a class="mdl-navigation__link" href="./help.html" target="_blank">Help</a>
+
           <div class="drawer-option">
             <button
               class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
               Enable Notifications
             </button>
           </div>
-        </nav>
       </div>
-      <img src="./src/images/main-image-sm.jpg" alt="Demo Image" class="main-image">
+      </nav>
+    <!-- </div>
+  </div> -->
       <main class="mdl-layout__content mat-typography">
         <form>
+        <!-- <img src="./src/images/headerImage.png" alt="Header Image" class="main-image"> -->
+        
           <div class="card bg-light">
-            <article class="card-body mx-auto" style="max-width: 500px;">
-              <h3 class="card-main-title text-center">Form Submit</h3>
-              <h4 class="card-title mt-3 text-center">Enter Your Details</h4>
+            <article class="card-body mx-auto">
+              <!-- <h3 class="card-main-title text-center">Form Submit</h3> -->
+              <h3 class="card-title mt-3 text-center">Please, Enter Your Details</h3><br>
 
               <div class="form-group input-group">
                 <div class="input-group-prepend">
@@ -137,28 +151,25 @@
                 <textarea name="Comment" class="form-control" placeholder="Please write something!" type="text"
                   size="50"></textarea>
               </div>
-              <div>
-                <button class="submit" id="submit-button">Submit</button>
+              <div style="align-items: center;">
+                <button class="submit" id="submit-btn">Submit</button>
+                <button type="reset" class="reset" id="reset-btn">Reset</button>
               </div>
-              <div id="confirmation-toast" aria-live="assertive" aria-atomic="true" aria-relevant="text"
+              <!-- <div id="confirmation-toast" aria-live="assertive" aria-atomic="true" aria-relevant="text"
                 class="mdl-snackbar mdl-js-snackbar">
                 <div class="mdl-snackbar__text"></div>
                 <button type="button" class="mdl-snackbar__action"></button>
-              </div>
-
-              <input type="reset" value="Reset" name="Reset">
-
+              </div> -->
         </form>
-
-
       </main>
-    </div>
-  </div>
+
   <script defer src="./src/js/material.min.js"></script>
   <script src="./src/js/fetch.js"></script>
   <script src="./src/js/promise.js"></script>
   <script src="./src/js/app.js"></script>
   <script src="./src/js/feed.js"></script>
 </body>
-
+<footer>
+  <h5 class="footer">@KMK Projects, 2022</h5>
+</footer>
 </html>
