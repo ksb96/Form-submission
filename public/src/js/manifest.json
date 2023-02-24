@@ -1,33 +1,39 @@
 {
     "name": "Submit form",
-    "short": "pwa",
+    "short_name": "pwa-app",
+    "description": "Demonstration of the use of a PWA application!",
     "start_url": "/index.html",
     "scope": "./index.html",
     "display": "standalone",
     "background_color": "#fff",
-    "theme": "#000",
+    "theme_color": "#000",
     "dir": "ltr",
-    "lang": "en-US",
-    "icons": [
+    "orientation": "potrait",
+    "lang": "en-US","icons": [
         {
-            "src": "/images/icons/favicon.ico",
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "/src/images/icons/apple-touch-icon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16" 
         },
         {
-            "src": "/images/icons/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "/src/images/icons/apple-touch-icon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"    
         },
         {
-            "src": "/images/icons/favicon-32x32.png",
-            "sizes": "32x32",
-            "type": "image/png"
+            "src": "/src/images/icons/apple-touch-icon-64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
         },
         {
-            "src": "src/js/images/icons/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+            "src": "/src/images/icons/apple-touch-icon-180x180.png",
+            "type": "image/png",
+            "sizes": "180x180"          
+        },
+        {
+            "src": "/src/images/icons/apple-touch-icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"          
         }
     ]
 }
