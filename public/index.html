@@ -49,11 +49,11 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="./about.html">About</a>
-            <a class="mdl-navigation__link" href="./help.html" target="_blank">Help</a>
+            <a class="mdl-navigation__link openButton" onclick="openAbout()">About</a>
+            <a class="mdl-navigation__link" onclick="openHelp()">Help</a>
             <div class="drawer-option">
-              <button
-                class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
+              <button id="custom-noti-style"
+                class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button">
                 Enable Notifications
               </button>
             </div>
@@ -66,15 +66,14 @@
         <!-- <i class=" fa-duotone fa-hand-wave " style=" color: #1c7ed6; size: 20px;"></i>
           <i class="fa-sharp fa-regular fa-hand-wave"></i> -->
 
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="./about.html" target="_blank">About</a>
+        <nav class="mdl-navigation" style="color:#000 !important ;">
+          <a class="mdl-navigation__link">About</a>
           <a class="mdl-navigation__link" href="" target="_blank">Criteria</a>
           <a class="mdl-navigation__link" href="" target="_blank">Image Gallery</a>
-          <a class="mdl-navigation__link" href="./help.html" target="_blank">Help</a>
+          <a class="mdl-navigation__link" href="" target="_blank">Help</a>
 
           <div class="drawer-option">
-            <button
-              class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
+            <button class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button">
               Enable Notifications
             </button>
           </div>
@@ -163,6 +162,27 @@
       <script src="./src/js/promise.js"></script>
       <script src="./src/js/app.js"></script>
       <script src="./src/js/feed.js"></script>
+
+      <!-- Pop-up -->
+      <div class="aboutPopup">
+        <div class="formPopup" id="popupForm">
+          <h4>About Page</h4>
+          <p class="content"> Thank to pop me out of that button, but now i'm done so you can close this window.</p>
+          <button type="button" class="btn-cancel" onclick="closeAbout()">Close</button>
+        </div>
+      </div>
+      <script>
+        function openAbout() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        function closeAbout() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+      </script>
+
+
+
+
 </body>
 <footer>
   <h5 class="footer">@KMK Projects, 2022</h5>

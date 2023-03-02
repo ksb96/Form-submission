@@ -9,7 +9,7 @@ self.addEventListener('install', (event) => {
             cache.addAll([
                 '/',
                 '/index.html',
-                '/about.html',
+                // '/about.html',
                 '/help.html',
                 '/src/js/app.js',
                 '/src/js/material.min.js',
