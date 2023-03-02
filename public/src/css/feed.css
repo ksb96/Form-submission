@@ -15,7 +15,7 @@
   
 } */
 
-#custom-noti-style{
+#custom-noti-style {
   background-color: #fff !important;
   color: #000 !important;
 }
@@ -24,7 +24,7 @@
 .openButton {
   border: none;
   border-radius: 5px;
-  background-color: rgb(63,81,181);
+  background-color: rgb(63, 81, 181);
   color: white;
   cursor: pointer;
   position: relative;
@@ -57,13 +57,14 @@
 .btn-cancel .cancel {
   background-color: #cc0000;
 }
+
 /* END */
 
 /* help page - START */
 .openButton {
   border: none;
   border-radius: 5px;
-  background-color: rgb(63,81,181);
+  background-color: rgb(63, 81, 181);
   color: white;
   cursor: pointer;
   position: relative;
@@ -131,6 +132,7 @@
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -141,19 +143,22 @@
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #06D85F;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
-  .box{
+@media screen and (max-width: 700px) {
+  .box {
     width: 70%;
   }
-  .popup{
+
+  .popup {
     width: 70%;
   }
 }
