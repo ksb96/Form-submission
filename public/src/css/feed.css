@@ -59,6 +59,46 @@
 }
 /* END */
 
+/* help page - START */
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(63,81,181);
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.aboutHelpPage {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.helpPopup {
+  display: none;
+  width: 40%;
+  position: fixed;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #d5d9e7;
+  z-index: 2;
+  text-align: center;
+  background-color: #ede9e9;
+  font-family: cursive;
+  font-size: 20px;
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+}
+
+.btn-cancel .cancel {
+  background-color: #cc0000;
+}
+
+/* END */
+
 .overlay {
   position: relative;
   top: 0;

@@ -50,7 +50,7 @@
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="mdl-navigation__link openButton" onclick="openAbout()">About</a>
-            <a class="mdl-navigation__link" onclick="openHelp()">Help</a>
+            <a class="mdl-navigation__link openButton" onclick="openHelp()">Help</a>
             <div class="drawer-option">
               <button id="custom-noti-style"
                 class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button">
@@ -180,6 +180,23 @@
         }
       </script>
 
+      <!-- help -->
+      <div class="aboutHelpPage">
+        <div class="helpPopup" id="popup">
+          <h4>Help Page</h4>
+          <p class="content"> Contact : +123456789.</p>
+          <p class="content"> Email ID : test@gmail.com.</p>
+          <button type="button" class="btn-cancel" onclick="closeHelp()">Close</button>
+        </div>
+      </div>
+      <script>
+        function openHelp() {
+          document.getElementById("popup").style.display = "block";
+        }
+        function closeHelp() {
+          document.getElementById("popup").style.display = "none";
+        }
+      </script>
 
 
 
