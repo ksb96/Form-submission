@@ -10,6 +10,11 @@ function closeCreatePostModal() {
   createPostArea.style.display = 'none';
 }
 
-shareImageButton.addEventListener('click', openCreatePostModal);
+// fetch('https://httpbin.org/get').then((res)=>{
+//   return res.json();
+// }).then((err)=>{
+//   console.log('Errrrr!!!Sorry data cannot be fetch now');
+// })
 
+shareImageButton.addEventListener('click', openCreatePostModal);
 closeCreatePostModalButton.addEventListener('click', closeCreatePostModal);
