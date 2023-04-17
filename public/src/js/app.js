@@ -1,4 +1,5 @@
 var deferPrompt;
+var enableNotificationsButtons = document.querySelectorAll('.enable-notifications');
 // const mongoose = require('mongoose')
 // const MongoStore = require('connect-mongo');
 
@@ -23,6 +24,26 @@ window.addEventListener('beforeinstallprompt', (event) => {
     deferPrompt = event;
     return false;
 });
+
+// ask-permission
+function askForNotificationPermission() {
+    Notification.requestPermission(function(result){
+        console.log('User Choice', result);
+        if(result !== 'granted'){
+            console.log('No notification permission granted');
+        }else{
+
+        }
+    });
+}
+
+//notification
+if('Notification' in window){
+    for(var i = 0; i < enableNotificationsButtons; i++){
+        enableNotificationsButtons[i].style.display = 'inline-block';
+        enableNotificationsButtons[i].addEventListener('click',askForNotificationPermission);
+    }
+}
 
 //mongodb connect
 // const { MongoClient, ServerApiVersion } = require('mongodb');
